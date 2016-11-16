@@ -1,0 +1,542 @@
+@font-face
+  font-family HFNSS
+  src url("./hfnss.ttf")
+  
+@font-face
+  font-family HFICONS
+  src url("./ctpaint-icons.ttf")
+
+@font-face
+  font-family HFGAM
+  src url("./HFGAM.ttf")
+
+standardSize    = 2em
+biggerSize      = 4em
+wayBig          = 8em
+cellWidth       = 50px
+cellHeight      = 19px
+
+pointColor      = #b0a69a
+
+importantText   = #b39f4b
+importanterText = #e3d34b
+
+ignorable         = #807872
+veryIgnorable     = #54574d
+veryVeryIgnorable = #2a2c27
+
+background      = #030907
+backgroundx2    = #06120e
+offBackground   = #0a050d
+offBlue         = #143b2e
+actualBlack     = #000000
+
+critical        = #f21d23
+good            = #366317
+prettyBlue      = #175cfe
+
+i0 = #807672
+i1 = #57524f
+i2 = #2c2826
+i3 = #131610
+
+::-webkit-input-placeholder 
+  color veryIgnorable
+
+
+body
+  background backgroundx2
+  padding    0
+  margin     0
+  overflow hidden
+  
+.cover-photo-container
+  overflow hidden
+  height 100px
+  border 2px ignorable solid
+  position relative
+
+.profile-pic
+  margin-top -79px
+  width 75px
+  height 75px
+  position relative
+  border 2px ignorable solid
+  z-index 5
+  
+.group-profile-body
+  position absolute
+  left 64px
+  top 5px
+  
+.group-profile-buttons
+  position absolute
+  left 378px
+  top 5px
+
+.group-profile-pic
+  width 50px
+  height 50px
+  border 2px ignorable solid
+  image-rendering pixelated
+  
+
+.storage-view
+  width 641px
+  float left
+  margin-top 11px
+  margin-left 11px
+  
+.message-profile-pic-container
+  width 50px
+  height 50px
+  border-right 1px solid veryIgnorable
+  // margin-top -1px
+  // margin-left -1px
+  overflow hidden
+
+.message-profile-pic
+  width 50px
+  min-height 50px
+
+  
+.message-text-container
+  // height 50px
+  // left 52px
+  // top 2px
+  // position absolute
+  display table-cell
+  vertical-align middle
+
+.card
+  background background
+  border 1px offBackground solid
+  margin-left 11px
+  margin-top 11px
+  padding 5px
+  overflow hidden
+  float left 
+  &.message-container
+    padding 0px
+    margin 0px
+    margin-bottom -1px
+    height 50px
+    border 1px solid veryIgnorable
+    width 248px
+    position relative
+    display table
+  &.drawing-container
+    margin 0px
+    overflow scroll
+  &.drawing-search-bar
+    margin 0px
+    margin-bottom 11px
+  &.drawing
+    margin 0px
+    margin-right 11px
+    margin-bottom 11px
+    border 1px solid veryIgnorable
+    padding 0px
+    position relative
+    &.end
+      margin-right 0px
+  &.feed
+    margin-left 22px
+    // height 800px
+    // position relative
+    overflow scroll
+  // &.left-hud
+  //   margin-left 50px
+    // overflow scroll
+  &.profile
+    margin-left 100px
+  &.group-profile
+    position relative
+  &.projects
+    overflow-y scroll
+    
+.left-hud
+  margin-left 90px
+  float left
+      
+.drawing-image-container
+  width 150px
+  height 100px
+  overflow hidden
+  // position absolute
+  // top 0px
+
+.drawing-text-container
+  // float left
+  position absolute
+  top 100px
+  width 100%
+  text-align center
+  padding 6px
+  padding-left 0px
+  padding-right 0px
+  border-top 1px solid veryIgnorable
+
+.drawing-image
+  // max-width 150px
+  width 100%
+  image-rendering pixelated
+  display block
+  // margin-left auto
+  // margin-right auto
+  // margin-top -20px
+  // top 50%
+  // position absolute
+  // transform translate(0, -50%)
+  // vertical-align middle
+
+.title-bar
+  width 100%
+  padding 5px
+  float top
+  height 19px
+  border-bottom 1px offBackground solid
+  background background
+  
+.main-search
+  // float left
+  display inline
+  position absolute
+  left 373px
+  top 0px
+  border 1px solid offBackground
+  background backgroundx2
+  font-family HFNSS
+  color pointColor
+  -webkit-font-smoothing none
+  font-size 2em
+  font-smooth none
+  outline none
+  height 29px
+  width 651px
+  padding-left 11px
+    
+.drawing-search
+  display inline
+  border 1px solid offBackground
+  background backgroundx2
+  font-family HFNSS
+  color pointColor
+  -webkit-font-smoothing none
+  font-size 2em
+  font-smooth none
+  outline none
+  height 29px
+  width 478px
+  padding-left 11px
+  &.project
+    width 577px
+    margin-bottom 5px
+  &.threads
+    width 435px
+  
+.new-drawing
+  display inline
+  border 2px solid veryIgnorable
+  background backgroundx2
+  font-family HFNSS
+  color veryIgnorable
+  -webkit-font-smoothing none
+  font-size 2em
+  font-smooth none
+  outline none
+  height 27px
+  width 152px
+  float left
+  margin-right 11px
+  margin-top 1px
+  &.in-app
+    // float right
+    margin-top -5px
+    margin-right 0px
+    margin-left 29px 
+    border 2px solid background
+  &:hover
+    color pointColor
+    border 2px solid pointColor
+    background veryIgnorable
+  &.group
+    width 200px
+    margin-top 0px
+    margin-bottom 2px
+  // &.threads 
+
+.settings
+  display inline
+  border 2px solid veryIgnorable
+  background backgroundx2
+  font-family HFNSS
+  color veryIgnorable
+  -webkit-font-smoothing none
+  font-size 2em
+  font-smooth none
+  outline none
+  height 27px
+  width 100%
+  float left
+  margin-right 11px
+  margin-top 1px
+  &:hover
+    color pointColor
+    border 2px solid pointColor
+    background veryIgnorable
+
+.tool-tip-container
+  top 149px
+  left 30px
+  position absolute
+
+.tool-tip 
+  width 91px
+  height 1em
+  padding 5px
+  background background
+  position relative
+  
+  border-top 1px solid importantText
+  border-right 1px solid importantText
+  border-bottom 1px solid importantText
+
+.tool-tip-arrow
+  content ""
+  position absolute
+  right 101px
+  // right 99%
+  top 0px
+  width 0
+  height 0
+  border-top 14px solid transparent
+  border-right 14px solid background
+  border-bottom 14px solid transparent
+  
+.tool-tip-arrow-border
+  content ""
+  position absolute
+  right 103px
+  // right 99%
+  top 0px
+  width 0
+  height 0
+  border-top 14px solid transparent
+  border-right 14px solid importantText
+  border-bottom 14px solid transparent
+  
+  
+.fake-canvas
+  width 400px
+  height 600px
+  position absolute
+  top 111px
+  left 141px
+  background background
+  border-style            solid
+  border-width            1px
+  border-color            veryIgnorable
+  
+.group-pic
+  height 21px
+  width 21px
+  display inline
+  
+.message-name
+  color ignorable
+  
+.message-name-other
+  color importantText
+
+.text
+  margin 0
+  position relative
+  font-family HFNSS
+  color pointColor
+  -webkit-font-smoothing none
+  font-size 2em
+  font-smooth none
+  &.important
+    color importantText
+  &.name
+    color importantText
+    margin-top 2px
+    &:hover
+      color importanterText
+      cursor pointer
+  &.group
+    color importantText
+    margin-left 11px
+    margin-top -2px
+    display inline
+    &:hover
+      color importanterText
+      cursor pointer
+  &.ignorable
+    margin-top 2px
+    color ignorable
+  &.veryIgnorable
+    margin-top 2px
+    color veryIgnorable
+  &.small
+    font-family HFGAM
+    font-size 1em
+  &.link
+    color veryIgnorable
+  &.dark
+    margin 11px
+  &.project-text
+    margin-top 4px
+    margin-bottom 4px
+    // color i0
+  //   color background
+
+.icon
+  font-family  HFICONS
+  color        i0
+  font-size    1em
+  margin       0
+  margin-top  -1px
+  &.sharp
+    font-smooth none
+    -webkit-font-smoothing none
+  &:hover
+    color pointColor
+  // margin-top 4px
+
+  // image-rendering pixelated
+  
+.main
+  width 100%
+  margin auto
+  // with 60
+    
+  
+.vertical-tool-bar
+  background i2
+  height 100%
+  width 29px
+  border-right 1px i3 solid
+  padding-top 1px
+  position fixed
+  top 0px
+  left 0px
+  
+.horizontal-tool-bar
+  background veryIgnorable
+  height 58px
+  width 100%
+  // border-style solid
+  border-top 1px offBlue solid
+  position fixed
+  bottom 0px
+  left 0px
+  padding-top 1px
+  
+.tool-button-separator
+  margin 0px
+  width 24px
+  height 1px
+  color i3
+  background i3
+  margin-left 1px
+  
+.project-image
+  width 90px
+  overflow hidden
+  height 90px
+
+.project-item
+  position relative
+  border 2px ignorable solid
+  width 563px
+  height 90px
+  margin-top 5px
+  margin-bottom 11px
+  padding 5px
+  image-rendering pixelated
+  
+.thread-item
+  position relative
+  border 2px ignorable solid
+  width 584px
+  height 35px
+  margin-top 5px
+  margin-bottom 11px
+  padding 5px
+  
+.image-comment-pic
+  width 44px
+  height 44px
+  
+.image-comment
+  position relative
+  border 2px ignorable solid
+  width 497px
+  height auto
+  margin-bottom 11px
+  // padding 5px
+  
+.image-header
+  height 44px
+  border-bottom 2px ignorable solid
+  width 497px
+  
+.image-comment-body
+  padding 5px
+  
+.image-header-body
+  position absolute
+  top 5px
+  left 46px
+
+.project-details
+  position absolute
+  top 5px
+  left 342px
+  
+
+.project-body
+  position absolute
+  left 105px
+  top 5px
+  
+.tool-button
+  width 20px
+  height 20px
+  // border-style            solid
+  // border-width            1px
+  // border-color            i1
+  
+  border-top 2px solid i1
+  border-left 2px solid i1
+  border-right 2px solid i3
+  border-bottom 2px solid i3
+  text-align center
+  vertical-align middle
+  line-height 22px
+  margin-left 1px
+  &:hover
+    border-top 2px solid i3
+    border-left 2px solid i3
+    border-right 2px solid i1
+    border-bottom 2px solid i1
+    // background i1
+
+.name-field
+  display inline
+  border 1px solid offBackground
+  background backgroundx2
+  font-family HFGAM
+  color ignorable
+  -webkit-font-smoothing none
+  font-size 1em
+  font-smooth none
+  outline none
+  height 17px
+  width 478px
+  padding-left 5px
+  margin-left 11px
+  
+  

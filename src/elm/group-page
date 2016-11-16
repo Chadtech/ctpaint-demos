@@ -1,0 +1,208 @@
+module View exposing (..)
+
+import Html             exposing (..)
+import Html.Attributes  exposing (..)
+import Html.Events      exposing (..)
+import Types            exposing (..)
+import Components       exposing (..)
+import Json.Encode as Json
+import String
+
+
+view : Model -> Html Msg
+view m = 
+  div 
+  [ class "main" ]
+  [ div
+    [ class "title-bar" ]
+    [ p 
+      [ class "text link"
+      , style [ ("float", "left"), ("margin-left", "100px") ]
+      ]
+      [ text "CtPaint / NYC Pixel Artists" ]
+    ]
+
+  , div 
+    [ class "left-hud"
+    , size "600px" "auto"
+    ]
+    [ div 
+      [ class "card group-profile" 
+      , size "577px" "56px"
+      ]
+      [ img 
+        [ class "group-profile-pic"
+        , src "nyc-logo.png"
+        ] 
+        []
+
+      , div 
+        [ class "group-profile-body" ] 
+        [ p 
+          [ class "text important" ] 
+          [ text "NYC Pixel Artists" ]
+        , p
+          [ class "text small ignorable" ]
+          [ text "30 members, formed Jun 2014" ]
+        , p
+          [ class "text small ignorable" ]
+          [ text "4 projects, 186 drawings" ]
+        ]
+
+      , div
+        [ class "group-profile-buttons" ]
+        [ input 
+          [ class "new-drawing group", type' "submit", value "join" ] 
+          [] 
+        , input 
+          [ class "new-drawing group", type' "submit", value "message" ] 
+          [] 
+        ]
+      ] 
+
+    , div 
+      [ class "card projects" 
+      , size "577px" "490px"
+      ]
+      [ input 
+        [ class "drawing-search project", placeholder "search projects" ] 
+        []
+      , project 
+          "./meme-club.png"
+          "Meme Club" 
+          "109 drawings" 
+          "last updated 2 days ago" 
+          "20 threads" 
+          "dank memes only pls"
+      , project 
+          "./nyc.png"
+          "1st nyc pixel jam" 
+          "43 drawings" 
+          "last updated 6 days ago" 
+          "12 threads" 
+          "This is New York Citys first pixel jam! Artists across the city came together in lower Manhattan and marathon.."
+      , project 
+          "./ship-1.png"
+          "Orbiter 13" 
+          "23 drawings" 
+          "last updated 2 weeks ago" 
+          "5 threads"
+          "Orbiter 13 is an 2D rpg video game centered around spaceship physics and shipping mechanics. Made in Html 5"
+
+      , project 
+          "./knollmaster.png"
+          "Knoll Master" 
+          "11 drawings" 
+          "last updated 6 months ago" 
+          "7 threads" 
+          "Knoll Master is a simple Python game (PyGame) about squaring objects to the surface they rest on."
+      ]
+    ]
+
+  , div 
+    [ class "card threads"
+    , size "600px" "100%"
+    ]
+    [ input 
+      [ class "drawing-search threads", placeholder "search threads" ] 
+      []
+    , input 
+      [ class "new-drawing threads", type' "submit", value "new thread" ] 
+      [] 
+    , thread 
+        "The Pixel Jam was great! When should we do another?"
+        "Posted by Carolyn 4 days ago, last updated 1 hour ago"
+    , thread
+        "Working on educational video game, can I add here?"
+        "Posted by dr1v3r 2 weeks ago, last updated 3 days ago"
+    , thread
+        "Next Meet up is October 12th at Ace"
+        "Posted by ralphie 3 weeks ago, last updated 4 days ago"
+    , thread
+        "Knoll Master update"
+        "Posted by Sachzs 1 month ago, last updated 2 weeks ago"
+    , thread
+        "Next Meet up is Sept 8th at Vineapple"
+        "Posted by ralphie 2 months ago, last updated 1 month ago"
+    , thread
+        "Memes now have their own project"
+        "Posted by ralphie 2 months ago, last updated 1 month ago"
+    , thread
+        "Can I post memes here?"
+        "Posted by kitter 2 months ago, last updated 1 month ago"
+    , thread
+        "Next Meet up is August 10th at Ace"
+        "Posted by ralphie 3 months ago, last updated 3 months ago"
+    , thread
+        "Hi! Im Kitter - nice to meet you all"
+        "Posted by kitter 3 months ago last updated 3 months ago"
+    , thread
+        "New to town, friend of Sachzs"
+        "Posted by idkdou 4 months ago last updated 3 months"
+    ]
+  ]
+
+thread : String -> String -> Html Msg
+thread title details =
+  div
+  [ class "thread-item" ]
+  [ p [ class "text important" ] [ text title ] 
+  , p [ class "text small" ] [ text details ] ]
+
+project : String -> String -> String -> String -> String -> String -> Html Msg
+project imagesrc title drawings lastUpdate threads details =
+  div
+  [ class "project-item" ]
+  [ img 
+    [ src imagesrc 
+    , class "project-image"
+    ] 
+    [] 
+  , div
+    [ style 
+      [ ("border-right", "2px #807872 solid") 
+      , ("width", "0px")
+      , ("height", "100%")
+      , ("position", "absolute")
+      , ("top", "0px")
+      , ("left", "100px")
+      ] 
+    ]
+    []
+  , div
+    [ class "project-body" ]
+    [ p [ class "text important" ] [ text title ] 
+    , p [ class "text small project-text" ] [ text drawings ]
+    , p [ class "text small project-text" ] [ text lastUpdate ]
+    , p [ class "text small project-text" ] [ text threads ]
+    ]
+  , div
+    [ class "project-details" ]
+    [ p [ class "text small"] [ text details ] ]
+  ]
+
+
+
+drawingSearchBar : Html Msg
+drawingSearchBar =
+  div
+  [ class "card drawing-search-bar" 
+  , size "641px" "29px"
+  ]
+  [ input [ class "new-drawing", type' "submit", value "new drawing" ] []
+  , input [ class "drawing-search", placeholder "search drawings" ] [ ] 
+  ]
+
+
+searchBar : Html Msg
+searchBar =
+  input 
+  [ class "main-search"
+  , placeholder "search CtPaint"
+  ]
+  []
+
+
+size : String -> String -> Attribute Msg
+size w h =
+  style [ ("width", w), ("height", h) ]

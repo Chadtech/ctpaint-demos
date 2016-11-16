@@ -1,0 +1,40 @@
+var _user$project$Main$update = F2(
+	function (message, m) {
+		var _p0 = message;
+		switch (_p0.ctor) {
+			case 'UpdateField':
+				return {
+					ctor: '_Tuple2',
+					_0: _user$project$Types$Model(_p0._0),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+			case 'CheckForEnter':
+				return _elm_lang$core$Native_Utils.eq(_p0._0, 13) ? {
+					ctor: '_Tuple2',
+					_0: _user$project$Types$Model('Submitted!'),
+					_1: _elm_lang$core$Platform_Cmd$none
+				} : {ctor: '_Tuple2', _0: m, _1: _elm_lang$core$Platform_Cmd$none};
+			default:
+				return {
+					ctor: '_Tuple2',
+					_0: _user$project$Types$Model(_p0._0),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+		}
+	});
+var _user$project$Main$subscriptions = function (model) {
+	return _user$project$Ports$response(_user$project$Types$DoTheThing);
+};
+var _user$project$Main$main = {
+	main: _elm_lang$html$Html_App$program(
+		{
+			init: {
+				ctor: '_Tuple2',
+				_0: _user$project$Types$Model('Elm 0.17 Gulp Coffeescript Stylus Lodash Browserify Boilerplate!'),
+				_1: _elm_lang$core$Platform_Cmd$none
+			},
+			view: _user$project$View$view,
+			update: _user$project$Main$update,
+			subscriptions: _user$project$Main$subscriptions
+		})
+};

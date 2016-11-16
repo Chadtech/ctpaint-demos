@@ -1,0 +1,165 @@
+module View exposing (..)
+
+import Html             exposing (..)
+import Html.Attributes  exposing (..)
+import Html.Events      exposing (..)
+import Types            exposing (..)
+import Components       exposing (..)
+import Json.Encode as Json
+
+
+view : Model -> Html Msg
+view m = 
+  div 
+  [ ]
+  [ div
+    [ class "title-bar" ]
+    [ input [ class "new-drawing in-app", type' "submit", value "file" ] []
+    , p 
+      [ class "text link"
+      , style [ ("float", "left"), ("margin-left", "29px") ]
+      ]
+      [ span [ style [ ("color", "#807872"), ("margin-left", "77px") ] ] [ text "kickstarter-mock-up-0" ] ]
+    ]
+  , verticalToolBar
+  , horizontalToolBar
+  , div
+    [ class "fake-canvas" ]
+    [ point "September 2014"
+    , point "I start working on the CtPaint alpha"
+    , point "October 2014"
+    , point "I finish the CtPaint alpha"
+    , point "April 2016"
+    , point "I work with the good guys at Videoloco to make my kickstarter video"
+    , point "September 2016"
+    , point "This kickstarter launches"
+    , point "October 2016"
+    , point "This kickstarter is funded"
+    , point "November 2016"
+    , point "Software development team is built, research is complete, and software architecture model layed out. Work starts."
+    , point "December 2016"
+    , point "Kickstarter rewards shipped out. First beta released by end of month."
+    , point "March 2017"
+    , point "Anticipated first release"
+    , input 
+      [ value "kickstarter-mock-up-0"
+      , class "name-field"
+      ] 
+      []
+    ]
+  , div
+    [ class "tool-tip-container" ]
+    [ div
+      [ class "tool-tip-arrow-border" ]
+      []
+    , div
+      [ class "tool-tip-arrow" ]
+      []
+    ]
+  ]
+
+point : String -> Html Msg
+point str =
+  p
+  [ class "text dark small" ]
+  [ text str ]
+
+horizontalToolBar : Html Msg
+horizontalToolBar =
+  div
+  [ class "horizontal-tool-bar" ]
+  []
+
+verticalToolBar : Html Msg
+verticalToolBar =
+  div
+  [ class "vertical-tool-bar" ]
+  [ toolButton False "\xEA1A"
+  , separator
+  , toolButton False "\xEA17"
+  , separator
+  , toolButton False "\xEA18"
+  , separator
+  , toolButton True  "\xEA07" -- Select
+  , separator
+  , toolButton False "\xEA0A" -- Move
+  , separator
+  , toolButton False "\xEA08"
+  , separator
+  , toolButton False "\xEA16"
+  , separator
+  , toolButton False "\xEA1B" -- Eraser
+  , separator
+  , toolButton False "\xEA1C" -- Spray
+  , separator
+  , toolButton True "\xEA02" -- Point
+  , separator
+  , toolButton False "\xEA09"
+  , separator 
+  , toolButton False "\xEA1D" -- Curvy line
+  , separator
+  , toolButton False "\xEA20"
+  , separator
+  , toolButton False "\xEA03"
+  , separator
+  , toolButton False "\xEA04"
+  , separator
+  , toolButton False "\xEA06"
+  , separator
+  , toolButton False "\xEA05"
+  , separator
+  , toolButton False "\xEA19"
+  , separator
+  , toolButton True "\xEA1E" -- Blur
+  , separator
+  , toolButton False "\xEA01" 
+  , separator
+  , toolButton False "\xEA0B"
+  , separator
+  , toolButton False "\xEA0C"
+  , separator
+  , toolButton False "\xEA0D"
+  , separator
+  , toolButton False "\xEA0E"
+  , separator
+  , toolButton False "\xEA0F"
+  , separator
+  , toolButton False "\xEA10"
+  , separator
+  , toolButton False "\xEA12"
+  , separator
+  , toolButton False "\xEA13"
+  , separator
+  , toolButton False "\xEA14"
+  , separator
+  , toolButton False "\xEA15"
+  , separator
+  , toolButton False "\xEA1F"
+  , separator
+  , toolButton False "\xEA21"
+  ]
+
+toolButton : Bool -> String -> Html Msg
+toolButton sharp str =
+  let
+    sharpClass =
+    if sharp then " sharp"
+    else ""
+  in
+
+  div 
+  [ class "tool-button"]
+  [ icon sharpClass str ]
+
+
+icon : String -> String -> Html Msg
+icon sharpClass str =
+  p
+  [ class ("icon" ++ sharpClass) ]
+  [ text str ]
+
+separator : Html Msg
+separator =
+  div 
+  [ class "tool-button-separator"] 
+  []

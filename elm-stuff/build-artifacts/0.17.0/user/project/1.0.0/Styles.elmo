@@ -1,0 +1,12 @@
+var _user$project$Styles_ops = _user$project$Styles_ops || {};
+_user$project$Styles_ops['-'] = F2(
+	function (v0, v1) {
+		return {ctor: '_Tuple2', _0: v0, _1: v1};
+	});
+var _user$project$Styles$viewStyle = _elm_lang$html$Html_Attributes$style(
+	_elm_lang$core$Native_List.fromArray(
+		[
+			A2(_user$project$Styles_ops['-'], 'margin', 'auto'),
+			A2(_user$project$Styles_ops['-'], 'width', '60%'),
+			A2(_user$project$Styles_ops['-'], 'padding', '100px')
+		]));

@@ -1,0 +1,1 @@
+These are the design mock ups I made for the CtPaint kickstarter

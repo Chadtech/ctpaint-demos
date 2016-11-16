@@ -1,0 +1,121 @@
+module View exposing (..)
+
+import Html             exposing (..)
+import Html.Attributes  exposing (..)
+import Html.Events      exposing (..)
+import Types            exposing (..)
+import Components       exposing (..)
+import Json.Encode as Json
+
+
+view : Model -> Html Msg
+view m = 
+  div 
+  [ ]
+  [ verticalToolBar
+  , div
+    [ class "fake-canvas" ]
+    []
+  , div
+    [ class "tool-tip-container" ]
+    [ div
+      [ class "tool-tip-arrow-border" ]
+      []
+    , div
+      [ class "tool-tip-arrow" ]
+      []
+    , div
+      [ class "tool-tip" ]
+      [ p
+        [ class "text" ]
+        [ text "Fill (F)" ]
+      ]
+    ]
+  ]
+
+verticalToolBar : Html Msg
+verticalToolBar =
+  div
+  [ class "vertical-tool-bar" ]
+  [ toolButton "\xEA1A"
+  , separator
+  , toolButton "\xEA17"
+  , separator
+  , toolButton "\xEA18"
+  , separator
+  , toolButton "\xEA07"
+  , separator
+  , toolButton "\xEA0A"
+  , separator
+  , toolButton "\xEA08"
+  , separator
+  , toolButton "\xEA16"
+  , separator
+  , toolButton "\xEA1B" -- Eraser
+  , separator
+  , toolButton "\xEA1C" -- Spray
+  , separator
+  , toolButton "\xEA02" -- Point
+  , separator
+  , toolButton "\xEA09"
+  , separator 
+  , toolButton "\xEA03"
+  , separator
+  , toolButton "\xEA04"
+  , separator
+  , toolButton "\xEA06"
+  , separator
+  , toolButton "\xEA05"
+  , separator
+  , toolButton "\xEA19"
+  , separator
+  , toolButton "\xEA01" 
+  , separator
+  , toolButton "\xEA0B"
+  , separator
+  , toolButton "\xEA0C"
+  , separator
+  , toolButton "\xEA0D"
+  , separator
+  , toolButton "\xEA0E"
+  , separator
+  , toolButton "\xEA0F"
+  , separator
+  , toolButton "\xEA10"
+  , separator
+  , toolButton "\xEA12"
+  , separator
+  , toolButton "\xEA13"
+  , separator
+  , toolButton "\xEA14"
+  , separator
+  , toolButton "\xEA15"
+  ]
+
+toolButton : String -> Html Msg
+toolButton str =
+  div 
+  [ class "tool-button" ]
+  [ icon str
+  --, div 
+  --  [ style
+  --    [ ("width"     , "100px")
+  --    , ("height"    , "20px")
+  --    , ("background", "#ff0000")
+  --    ]
+  --  ]
+  --  []
+  ]
+
+icon : String -> Html Msg
+icon str =
+  p
+  [ class "icon" ]
+  [ text str ]
+
+separator : Html Msg
+separator =
+  div 
+  [ class "tool-button-separator"] 
+  [ 
+  ]
