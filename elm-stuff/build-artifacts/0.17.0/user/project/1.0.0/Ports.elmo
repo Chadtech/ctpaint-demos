@@ -1,6 +1,0 @@
-var _user$project$Ports$request = _elm_lang$core$Native_Platform.outgoingPort(
-	'request',
-	function (v) {
-		return v;
-	});
-var _user$project$Ports$response = _elm_lang$core$Native_Platform.incomingPort('response', _elm_lang$core$Json_Decode$string);

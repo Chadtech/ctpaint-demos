@@ -7947,6 +7947,291 @@ var _user$project$View$size = F2(
 					{ctor: '_Tuple2', _0: 'height', _1: h}
 				]));
 	});
+var _user$project$View$group = F2(
+	function (imgSrc, str) {
+		return A2(
+			_elm_lang$html$Html$div,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$style(
+					_elm_lang$core$Native_List.fromArray(
+						[
+							{ctor: '_Tuple2', _0: 'height', _1: '21px'},
+							{ctor: '_Tuple2', _0: 'margin-top', _1: '0px'}
+						]))
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$img,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('group-pic'),
+							_elm_lang$html$Html_Attributes$src(imgSrc)
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[])),
+					A2(
+					_elm_lang$html$Html$p,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('text group')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(str)
+						]))
+				]));
+	});
+var _user$project$View$profile = A2(
+	_elm_lang$html$Html$div,
+	_elm_lang$core$Native_List.fromArray(
+		[
+			_elm_lang$html$Html_Attributes$class('card profile'),
+			A2(_user$project$View$size, '250px', '100%')
+		]),
+	_elm_lang$core$Native_List.fromArray(
+		[
+			A2(
+			_elm_lang$html$Html$div,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('cover-photo-container')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$img,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$src('./planet.png'),
+							_elm_lang$html$Html_Attributes$style(
+							_elm_lang$core$Native_List.fromArray(
+								[
+									{ctor: '_Tuple2', _0: 'margin-left', _1: '1em'},
+									{ctor: '_Tuple2', _0: 'margin-top', _1: '-22px'}
+								]))
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[]))
+				])),
+			A2(
+			_elm_lang$html$Html$img,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('profile-pic'),
+					_elm_lang$html$Html_Attributes$src('./twitter-profile-pic.jpg')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[])),
+			A2(
+			_elm_lang$html$Html$p,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('text name')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text('Chadtech')
+				])),
+			A2(
+			_elm_lang$html$Html$p,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('text veryIgnorable small')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text('dankMemer420')
+				])),
+			A2(
+			_elm_lang$html$Html$br,
+			_elm_lang$core$Native_List.fromArray(
+				[]),
+			_elm_lang$core$Native_List.fromArray(
+				[])),
+			A2(
+			_elm_lang$html$Html$p,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('text small ignorable')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text('groups')
+				])),
+			A2(_user$project$View$group, 'https://avatars1.githubusercontent.com/u/2939686?v=3&s=460', 'Chadtech'),
+			A2(_user$project$View$group, 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2015-10-21/12928747781_7682a42f709fcd66cc08_88.jpg', 'Pixelation'),
+			A2(_user$project$View$group, 'https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2015-10-16/12616560499_67fd7e70e8af5bd3f43c_88.jpg', 'Elm lang'),
+			A2(_user$project$View$group, 'https://lh6.googleusercontent.com/-TLZWVhAOXq8/AAAAAAAAAAI/AAAAAAAAKAc/GODEbQ44RGg/s0-c-k-no-ns/photo.jpg', 'Local Motors'),
+			A2(_user$project$View$group, 'https://avatars2.githubusercontent.com/u/1425305?v=3&s=84', 'HeatSync Labs'),
+			A2(
+			_elm_lang$html$Html$div,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$style(
+					_elm_lang$core$Native_List.fromArray(
+						[
+							{ctor: '_Tuple2', _0: 'height', _1: '17px'},
+							{ctor: '_Tuple2', _0: 'margin-top', _1: '5px'},
+							{ctor: '_Tuple2', _0: 'margin-left', _1: '19px'}
+						]))
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$p,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('text group small')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('more groups..')
+						]))
+				])),
+			A2(
+			_elm_lang$html$Html$br,
+			_elm_lang$core$Native_List.fromArray(
+				[]),
+			_elm_lang$core$Native_List.fromArray(
+				[])),
+			A2(
+			_elm_lang$html$Html$p,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('text small ignorable')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text('year of drawings')
+				])),
+			A2(
+			_elm_lang$html$Html$img,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$src('./calendar.png'),
+					_elm_lang$html$Html_Attributes$style(
+					_elm_lang$core$Native_List.fromArray(
+						[
+							{ctor: '_Tuple2', _0: 'margin-top', _1: '2px'},
+							{ctor: '_Tuple2', _0: 'margin-left', _1: '9px'}
+						]))
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[])),
+			A2(
+			_elm_lang$html$Html$p,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('text')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text(' ')
+				])),
+			A2(
+			_elm_lang$html$Html$br,
+			_elm_lang$core$Native_List.fromArray(
+				[]),
+			_elm_lang$core$Native_List.fromArray(
+				[])),
+			A2(
+			_elm_lang$html$Html$p,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('text')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text(' ')
+				])),
+			A2(
+			_elm_lang$html$Html$input,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('settings'),
+					_elm_lang$html$Html_Attributes$type$('submit'),
+					_elm_lang$html$Html_Attributes$value('edit profile')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[])),
+			A2(
+			_elm_lang$html$Html$input,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('settings'),
+					_elm_lang$html$Html_Attributes$type$('submit'),
+					_elm_lang$html$Html_Attributes$value('settings')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[]))
+		]));
+var _user$project$View$drawing = F4(
+	function (title, date, source, extra) {
+		var titleClass = (_elm_lang$core$Native_Utils.cmp(
+			_elm_lang$core$String$length(title),
+			11) > 0) ? ' small' : '';
+		return A2(
+			_elm_lang$html$Html$div,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class(
+					A2(_elm_lang$core$Basics_ops['++'], 'card drawing', extra)),
+					A2(_user$project$View$size, '150px', '150px')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$div,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('drawing-image-container')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							A2(
+							_elm_lang$html$Html$img,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('drawing-image'),
+									_elm_lang$html$Html_Attributes$src(source)
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[])),
+							A2(
+							_elm_lang$html$Html$div,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('drawing-text-container')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									A2(
+									_elm_lang$html$Html$p,
+									_elm_lang$core$Native_List.fromArray(
+										[
+											_elm_lang$html$Html_Attributes$class(
+											A2(_elm_lang$core$Basics_ops['++'], 'text', titleClass))
+										]),
+									_elm_lang$core$Native_List.fromArray(
+										[
+											_elm_lang$html$Html$text(title)
+										])),
+									A2(
+									_elm_lang$html$Html$p,
+									_elm_lang$core$Native_List.fromArray(
+										[
+											_elm_lang$html$Html_Attributes$class('text ignorable small')
+										]),
+									_elm_lang$core$Native_List.fromArray(
+										[
+											_elm_lang$html$Html$text(date)
+										]))
+								]))
+						]))
+				]));
+	});
 var _user$project$View$searchBar = A2(
 	_elm_lang$html$Html$input,
 	_elm_lang$core$Native_List.fromArray(
@@ -7956,6 +8241,36 @@ var _user$project$View$searchBar = A2(
 		]),
 	_elm_lang$core$Native_List.fromArray(
 		[]));
+var _user$project$View$drawingContainer = A2(
+	_elm_lang$html$Html$div,
+	_elm_lang$core$Native_List.fromArray(
+		[
+			_elm_lang$html$Html_Attributes$class('card drawing-container'),
+			A2(_user$project$View$size, '641px', '100%')
+		]),
+	_elm_lang$core$Native_List.fromArray(
+		[
+			A4(_user$project$View$drawing, 'Planet', 'Yesterday', './planet.png', ''),
+			A4(_user$project$View$drawing, 'other-ship', '3 days ago', './other-ship.png', ''),
+			A4(_user$project$View$drawing, 'ship-exploded', '5 days ago', './ship-exploded.png', ''),
+			A4(_user$project$View$drawing, 'ship-1', '5 days ago', './ship-1.png', ' end'),
+			A4(_user$project$View$drawing, 'key-diagram', '1 week ago', './key-diagram.png', ''),
+			A4(_user$project$View$drawing, 'ship-0', '1 week ago', './ship.png', ''),
+			A4(_user$project$View$drawing, 'fuel-tank', '2 weeks ago', './fuel-tank.png', ''),
+			A4(_user$project$View$drawing, 'doge', '1 month ago', './doge.png', ' end'),
+			A4(_user$project$View$drawing, 'fuzzy-planet', '1 month ago', './fuzzy-planet.png', ''),
+			A4(_user$project$View$drawing, 'jasper-b-day', '3 months ago', './jasper.png', ''),
+			A4(_user$project$View$drawing, 'robots', '4 months ago', './robot-0.png', ''),
+			A4(_user$project$View$drawing, 'magnamite', '6 months ago', './magnamite_0.png', ' end'),
+			A4(_user$project$View$drawing, 'drill', '1 year ago', './drill.png', ''),
+			A4(_user$project$View$drawing, 'safety-glasses', '1 year ago', './safety-glasses.png', ''),
+			A4(_user$project$View$drawing, 'knives', '1 year ago', './knives.png', ''),
+			A4(_user$project$View$drawing, 'cable', '1 year ago', './cable.png', ' end'),
+			A4(_user$project$View$drawing, 'cryptopartyTokyo', '1 year ago', './cryptopartyTokyo.png', ''),
+			A4(_user$project$View$drawing, 'soviet-lander', '1 year ago', './moonlander_0.png', ''),
+			A4(_user$project$View$drawing, 'AT&T long lines', '1 year ago', './hackphx5.png', ''),
+			A4(_user$project$View$drawing, 'pikachus', '1 year ago', './pikachus.png', ' end')
+		]));
 var _user$project$View$drawingSearchBar = A2(
 	_elm_lang$html$Html$div,
 	_elm_lang$core$Native_List.fromArray(
@@ -7985,96 +8300,39 @@ var _user$project$View$drawingSearchBar = A2(
 			_elm_lang$core$Native_List.fromArray(
 				[]))
 		]));
-var _user$project$View$project = F6(
-	function (imagesrc, title, drawings, lastUpdate, threads, details) {
+var _user$project$View$message = F2(
+	function (source, content) {
 		return A2(
 			_elm_lang$html$Html$div,
 			_elm_lang$core$Native_List.fromArray(
 				[
-					_elm_lang$html$Html_Attributes$class('project-item')
+					_elm_lang$html$Html_Attributes$class('card message-container')
 				]),
 			_elm_lang$core$Native_List.fromArray(
 				[
 					A2(
-					_elm_lang$html$Html$img,
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Attributes$src(imagesrc),
-							_elm_lang$html$Html_Attributes$class('project-image')
-						]),
-					_elm_lang$core$Native_List.fromArray(
-						[])),
-					A2(
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$style(
-							_elm_lang$core$Native_List.fromArray(
-								[
-									{ctor: '_Tuple2', _0: 'border-right', _1: '2px #807872 solid'},
-									{ctor: '_Tuple2', _0: 'width', _1: '0px'},
-									{ctor: '_Tuple2', _0: 'height', _1: '100%'},
-									{ctor: '_Tuple2', _0: 'position', _1: 'absolute'},
-									{ctor: '_Tuple2', _0: 'top', _1: '0px'},
-									{ctor: '_Tuple2', _0: 'left', _1: '100px'}
-								]))
-						]),
-					_elm_lang$core$Native_List.fromArray(
-						[])),
-					A2(
-					_elm_lang$html$Html$div,
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Attributes$class('project-body')
+							_elm_lang$html$Html_Attributes$class('message-profile-pic-container')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
 							A2(
-							_elm_lang$html$Html$p,
+							_elm_lang$html$Html$img,
 							_elm_lang$core$Native_List.fromArray(
 								[
-									_elm_lang$html$Html_Attributes$class('text important')
+									_elm_lang$html$Html_Attributes$class('message-profile-pic'),
+									_elm_lang$html$Html_Attributes$src(source)
 								]),
 							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text(title)
-								])),
-							A2(
-							_elm_lang$html$Html$p,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('text small project-text')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text(drawings)
-								])),
-							A2(
-							_elm_lang$html$Html$p,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('text small project-text')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text(lastUpdate)
-								])),
-							A2(
-							_elm_lang$html$Html$p,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('text small project-text')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text(threads)
-								]))
+								[]))
 						])),
 					A2(
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('project-details')
+							_elm_lang$html$Html_Attributes$class('message-text-container')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
@@ -8084,132 +8342,696 @@ var _user$project$View$project = F6(
 								[
 									_elm_lang$html$Html_Attributes$class('text small')
 								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text(details)
-								]))
+							content)
 						]))
 				]));
 	});
-var _user$project$View$thread = F2(
-	function (title, details) {
-		return A2(
-			_elm_lang$html$Html$div,
+var _user$project$View$messageName = function (str) {
+	return A2(
+		_elm_lang$html$Html$span,
+		_elm_lang$core$Native_List.fromArray(
+			[
+				_elm_lang$html$Html_Attributes$class('message-name-other')
+			]),
+		_elm_lang$core$Native_List.fromArray(
+			[
+				_elm_lang$html$Html$text(str)
+			]));
+};
+var _user$project$View$feed = A2(
+	_elm_lang$html$Html$div,
+	_elm_lang$core$Native_List.fromArray(
+		[
+			_elm_lang$html$Html_Attributes$class('card feed'),
+			A2(_user$project$View$size, '250px', '100%')
+		]),
+	_elm_lang$core$Native_List.fromArray(
+		[
+			A2(
+			_user$project$View$message,
+			'./twitter-profile-pic.jpg',
 			_elm_lang$core$Native_List.fromArray(
 				[
-					_elm_lang$html$Html_Attributes$class('thread-item')
-				]),
-			_elm_lang$core$Native_List.fromArray(
-				[
+					_elm_lang$html$Html$text('You commented '),
+					_user$project$View$messageName('\'wow cool\''),
+					_elm_lang$html$Html$text(' on '),
 					A2(
-					_elm_lang$html$Html$p,
+					_elm_lang$html$Html$span,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('text important')
+							_elm_lang$html$Html_Attributes$class('message-name-other')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html$text(title)
+							_elm_lang$html$Html$text('Henrys ')
 						])),
-					A2(
-					_elm_lang$html$Html$p,
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Attributes$class('text small')
-						]),
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html$text(details)
-						]))
-				]));
-	});
-var _user$project$View$comment = F4(
-	function (imagesrc, name, content, time) {
-		return A2(
-			_elm_lang$html$Html$div,
-			_elm_lang$core$Native_List.fromArray(
-				[
-					_elm_lang$html$Html_Attributes$class('image-comment')
-				]),
+					_elm_lang$html$Html$text('drawing')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
 			_elm_lang$core$Native_List.fromArray(
 				[
 					A2(
-					_elm_lang$html$Html$div,
+					_elm_lang$html$Html$span,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('image-header')
+							_elm_lang$html$Html_Attributes$class('message-name-other')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
-							A2(
-							_elm_lang$html$Html$div,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('image-comment-pic-container')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									A2(
-									_elm_lang$html$Html$img,
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html_Attributes$class('image-comment-pic'),
-											_elm_lang$html$Html_Attributes$src(imagesrc)
-										]),
-									_elm_lang$core$Native_List.fromArray(
-										[]))
-								])),
-							A2(
-							_elm_lang$html$Html$div,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('image-header-body')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									A2(
-									_elm_lang$html$Html$p,
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html_Attributes$class('text important')
-										]),
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html$text(name)
-										])),
-									A2(
-									_elm_lang$html$Html$p,
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html_Attributes$class('text small')
-										]),
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html$text(time)
-										]))
-								]))
+							_elm_lang$html$Html$text('mosquito man ')
 						])),
+					_elm_lang$html$Html$text('commented on his '),
 					A2(
-					_elm_lang$html$Html$div,
+					_elm_lang$html$Html$span,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('image-comment-body')
+							_elm_lang$html$Html_Attributes$class('message-name-other')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
-							A2(
-							_elm_lang$html$Html$p,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('text small')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text(content)
-								]))
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'aye\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./CIA.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('CIA ')
+						])),
+					_elm_lang$html$Html$text('commented on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito mans ')
+						])),
+					_elm_lang$html$Html$text('drawing \'BANE?\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'the maske..\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'He works ..\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./japan.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Japan '),
+					_elm_lang$html$Html$text('made a new drawing called '),
+					_user$project$View$messageName('\'tasty looking sushi\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./phoenix.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Cryptoparty Phoenix '),
+					_elm_lang$html$Html$text('made a new drawing called '),
+					_user$project$View$messageName('\'logo-0\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./twitter-profile-pic.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text('You worked on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('\'Planet\'')
 						]))
-				]));
-	});
+				])),
+			A2(
+			_user$project$View$message,
+			'./twitter-profile-pic.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text('You worked on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('\'Doge\'')
+						]))
+				])),
+			A2(
+			_user$project$View$message,
+			'./poke-profile-pic.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Forretress '),
+					_elm_lang$html$Html$text('worked on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('\'robots\'')
+						]))
+				])),
+			A2(
+			_user$project$View$message,
+			'./poke-profile-pic.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Forretress '),
+					_elm_lang$html$Html$text('cloned '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('\'robots\'')
+						])),
+					_elm_lang$html$Html$text(' from you')
+				])),
+			A2(
+			_user$project$View$message,
+			'./poke-profile-pic.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Forretress '),
+					_elm_lang$html$Html$text('made a new drawing called '),
+					_user$project$View$messageName('\'scary-fire-type-p..\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'aye\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./CIA.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('CIA ')
+						])),
+					_elm_lang$html$Html$text('commented on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito mans ')
+						])),
+					_elm_lang$html$Html$text('drawing \'BANE?\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'the maske..\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'He works ..\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'aye\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./CIA.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('CIA ')
+						])),
+					_elm_lang$html$Html$text('commented on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito mans ')
+						])),
+					_elm_lang$html$Html$text('drawing \'BANE?\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'the maske..\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'He works ..\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./japan.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Japan '),
+					_elm_lang$html$Html$text('made a new drawing called '),
+					_user$project$View$messageName('\'tasty looking sushi\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./phoenix.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Cryptoparty Phoenix '),
+					_elm_lang$html$Html$text('made a new drawing called '),
+					_user$project$View$messageName('\'logo-0\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./twitter-profile-pic.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text('You worked on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('\'Planet\'')
+						]))
+				])),
+			A2(
+			_user$project$View$message,
+			'./twitter-profile-pic.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html$text('You worked on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('\'Doge\'')
+						]))
+				])),
+			A2(
+			_user$project$View$message,
+			'./poke-profile-pic.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Forretress '),
+					_elm_lang$html$Html$text('worked on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('\'robots\'')
+						]))
+				])),
+			A2(
+			_user$project$View$message,
+			'./poke-profile-pic.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Forretress '),
+					_elm_lang$html$Html$text('cloned '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('\'robots\'')
+						])),
+					_elm_lang$html$Html$text(' from you')
+				])),
+			A2(
+			_user$project$View$message,
+			'./poke-profile-pic.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_user$project$View$messageName('Forretress '),
+					_elm_lang$html$Html$text('made a new drawing called '),
+					_user$project$View$messageName('\'scary-fire-type-p..\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'aye\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./CIA.png',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('CIA ')
+						])),
+					_elm_lang$html$Html$text('commented on '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito mans ')
+						])),
+					_elm_lang$html$Html$text('drawing \'BANE?\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'the maske..\'')
+				])),
+			A2(
+			_user$project$View$message,
+			'./aye.jpg',
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('mosquito man ')
+						])),
+					_elm_lang$html$Html$text('commented on his '),
+					A2(
+					_elm_lang$html$Html$span,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('message-name-other')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(' own drawing ')
+						])),
+					_elm_lang$html$Html$text(' \'He works ..\'')
+				]))
+		]));
 var _user$project$View$view = function (m) {
 	return A2(
 		_elm_lang$html$Html$div,
@@ -8241,132 +9063,20 @@ var _user$project$View$view = function (m) {
 							]),
 						_elm_lang$core$Native_List.fromArray(
 							[
-								_elm_lang$html$Html$text('CtPaint / Chadtech / Planet-full')
-							]))
+								_elm_lang$html$Html$text('CtPaint Home')
+							])),
+						_user$project$View$searchBar
 					])),
+				_user$project$View$profile,
 				A2(
 				_elm_lang$html$Html$div,
 				_elm_lang$core$Native_List.fromArray(
 					[
-						_elm_lang$html$Html_Attributes$class('left-hud'),
-						A2(_user$project$View$size, '', 'auto')
+						_elm_lang$html$Html_Attributes$class('storage-view')
 					]),
 				_elm_lang$core$Native_List.fromArray(
-					[
-						A2(
-						_elm_lang$html$Html$div,
-						_elm_lang$core$Native_List.fromArray(
-							[
-								_elm_lang$html$Html_Attributes$class('card projects'),
-								A2(_user$project$View$size, '504px', '800px')
-							]),
-						_elm_lang$core$Native_List.fromArray(
-							[
-								A2(
-								_elm_lang$html$Html$img,
-								_elm_lang$core$Native_List.fromArray(
-									[
-										_elm_lang$html$Html_Attributes$src('./planet-full.png'),
-										_elm_lang$html$Html_Attributes$style(
-										_elm_lang$core$Native_List.fromArray(
-											[
-												{ctor: '_Tuple2', _0: 'border', _1: '2px #54474d solid'}
-											]))
-									]),
-								_elm_lang$core$Native_List.fromArray(
-									[])),
-								A2(
-								_elm_lang$html$Html$input,
-								_elm_lang$core$Native_List.fromArray(
-									[
-										_elm_lang$html$Html_Attributes$class('new-drawing'),
-										_elm_lang$html$Html_Attributes$type$('submit'),
-										_elm_lang$html$Html_Attributes$value('clone'),
-										_elm_lang$html$Html_Attributes$style(
-										_elm_lang$core$Native_List.fromArray(
-											[
-												{ctor: '_Tuple2', _0: 'width', _1: '100%'}
-											]))
-									]),
-								_elm_lang$core$Native_List.fromArray(
-									[])),
-								A2(
-								_elm_lang$html$Html$p,
-								_elm_lang$core$Native_List.fromArray(
-									[
-										_elm_lang$html$Html_Attributes$class('text small veryIgnorable')
-									]),
-								_elm_lang$core$Native_List.fromArray(
-									[
-										_elm_lang$html$Html$text('last updated 4 hours ago')
-									])),
-								A2(
-								_elm_lang$html$Html$br,
-								_elm_lang$core$Native_List.fromArray(
-									[]),
-								_elm_lang$core$Native_List.fromArray(
-									[])),
-								A2(
-								_elm_lang$html$Html$p,
-								_elm_lang$core$Native_List.fromArray(
-									[
-										_elm_lang$html$Html_Attributes$class('text')
-									]),
-								_elm_lang$core$Native_List.fromArray(
-									[
-										_elm_lang$html$Html$text('Paint software that runs in your internet browser')
-									]))
-							]))
-					])),
-				A2(
-				_elm_lang$html$Html$div,
-				_elm_lang$core$Native_List.fromArray(
-					[
-						_elm_lang$html$Html_Attributes$class('card threads'),
-						A2(_user$project$View$size, '500px', '100%')
-					]),
-				_elm_lang$core$Native_List.fromArray(
-					[
-						A4(_user$project$View$comment, './poke-profile-pic.png', 'forretress', 'the clouds, particularly in the center of the drawing, are kind of... uhm... speckle-y? It doesnt look very realistic. Other than that I think it looks pretty good. nice work!', '3 hours ago'),
-						A4(_user$project$View$comment, './twitter-profile-pic.jpg', 'Chadtech', 'Thanks! Ye I know what you mean. The problem is those speckles are about one pixel each, and I dont know how to make details smaller than that to be honest.', '2 hours ago'),
-						A2(
-						_elm_lang$html$Html$textarea,
-						_elm_lang$core$Native_List.fromArray(
-							[
-								_elm_lang$html$Html_Attributes$style(
-								_elm_lang$core$Native_List.fromArray(
-									[
-										{ctor: '_Tuple2', _0: 'border', _1: '2px solid #54474d'},
-										{ctor: '_Tuple2', _0: 'width', _1: '501px'},
-										{ctor: '_Tuple2', _0: 'height', _1: '100px'},
-										{ctor: '_Tuple2', _0: 'outline', _1: 'none'},
-										{ctor: '_Tuple2', _0: 'background-color', _1: '030907'},
-										{ctor: '_Tuple2', _0: 'font-family', _1: 'HFNSS'},
-										{ctor: '_Tuple2', _0: 'color', _1: '#b0a69a'},
-										{ctor: '_Tuple2', _0: 'font-size', _1: '2em'},
-										{ctor: '_Tuple2', _0: '-webkit-font-smoothing', _1: 'none'}
-									])),
-								_elm_lang$html$Html_Attributes$placeholder('type your comment here..')
-							]),
-						_elm_lang$core$Native_List.fromArray(
-							[])),
-						A2(
-						_elm_lang$html$Html$input,
-						_elm_lang$core$Native_List.fromArray(
-							[
-								_elm_lang$html$Html_Attributes$class('new-drawing'),
-								_elm_lang$html$Html_Attributes$type$('submit'),
-								_elm_lang$html$Html_Attributes$value('comment'),
-								_elm_lang$html$Html_Attributes$style(
-								_elm_lang$core$Native_List.fromArray(
-									[
-										{ctor: '_Tuple2', _0: 'width', _1: '501px'},
-										{ctor: '_Tuple2', _0: 'margin-top', _1: '9px'}
-									]))
-							]),
-						_elm_lang$core$Native_List.fromArray(
-							[]))
-					]))
+					[_user$project$View$drawingSearchBar, _user$project$View$drawingContainer])),
+				_user$project$View$feed
 			]));
 };
 
